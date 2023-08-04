@@ -106,7 +106,7 @@ const ReactCurvedText = (props) => {
         <svg ref={svgRef} height={height} width={width} {...svgProps}>
             <text key={textKey} {...textProps}>
                 <textPath xlinkHref={`#${ellipseId}`} startOffset={startOffset} {...textPathProps}>
-                    <tspan {...tspanProps}>{text}</tspan>
+                    <tspan {...tspanProps}><Text>{text}</Text></tspan>
                 </textPath>
             </text>
         </svg>
